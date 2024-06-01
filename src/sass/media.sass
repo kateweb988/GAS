@@ -1,0 +1,330 @@
+@media screen and (max-width: 1199px)
+   nav .nav__list, .nav__btn
+      display: none
+   .nav__box
+      position: relative
+      padding-right: 60px
+   .menu-btn 
+      width: 42px
+      height: 42px
+      position: absolute
+      display: block
+      right: 0px
+      top: 7px
+      z-index: 22
+      overflow: hidden
+      background: url(/img/bur1.svg) no-repeat center center
+   .menu-btn span 
+      width: 38px
+      height: 2px
+      position: absolute
+      top: 50%
+      left: 50%
+      opacity: 0
+      transform: translate(-50%, -50%)
+      background-color: $blue
+      transition: all 0.5s
+   .menu-btn span:nth-of-type(2) 
+      top: calc(50% - 8.5px)
+      width: 38px
+      height: 2px
+   .menu-btn span:nth-of-type(3) 
+      top: calc(50% + 9.4px)
+      width: 38px
+      height: 2px
+   .menu 
+      position: fixed
+      top: 0
+      display: block
+      right: 0
+      width: 100%
+      height: 100%
+      padding: 130px 40px 40px
+      background: #015086
+      transform: translateX(500%)
+      transition: transform 0.5s
+      z-index: 19
+      overflow: hidden
+      -webkit-box-shadow: -11px 0px 28px -12px rgba(0,0,0,0.75)
+      -moz-box-shadow: -11px 0px 28px -12px rgba(0,0,0,0.75)
+      box-shadow: -11px 0px 28px -12px rgba(0,0,0,0.75)
+      .nav__btn
+         display: flex 
+         margin: 0 auto 
+      ul 
+         text-align: center
+         li 
+            margin-bottom: 40px
+            a 
+               color: rgb(255, 255, 255)
+               font-size: 20px
+               font-weight: 400
+               line-height: 24px
+   .menu.active
+      transform: translateX(0)
+   .nav__content, .nav__logo
+      position: relative
+      z-index: 20
+   .menu-btn.active 
+      overflow: visible
+      background: url(/img/bur2.svg) no-repeat center center
+   .menu-btn.active span:nth-of-type(1) 
+      display: none
+   .menu-btn.active span:nth-of-type(2) 
+      top: 50%
+      width: 24px
+      transform: translate(-50%, 0%) rotate(45deg)
+      margin-left: 0
+   .menu-btn.active span:nth-of-type(3) 
+      width: 24px
+      top: 50%
+      transform: translate(-50%, 0%) rotate(-44deg)
+      margin-left: 0
+   .header .swiper1 .swiper-slide
+      height: 700px
+   .about__bg
+      width: 100%
+   .area__item
+      width: 49%
+   .item__box
+      flex-direction: column
+   .item__content
+      flex: inherit
+      margin: 0 auto 80px
+      max-width: 400px
+      text-align: center
+   .item__content h2, .item__content .sub
+      text-align: center
+   .item__row
+      margin: 0 auto
+   .why__box
+      flex-direction: column
+      align-items: center
+   .why .accordeon
+      margin-top: 33px
+      margin-left: 0
+   .works__arr
+      left: 6px  
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      background: $blue
+      display: flex
+      align-items: center
+      justify-content: center
+      overflow: hidden 
+      .svg 
+         fill: $blue
+         path 
+            fill: $blue
+         .rr 
+            fill: white
+   .works__arr.swiper-button-next2
+      right: 6px
+   .works .swiper-pagination2 .swiper-pagination-bullet
+      width: 32px
+      height: 6px
+      border-radius: 10px
+      background: rgb(255, 255, 255)
+      margin-right: 10px !important
+      &:last-child
+         margin-right: 0 !important
+   .call__bg 
+      top: -574px
+      left: 0
+      width: 100%
+   .call__box img
+      display: none
+   .call__box
+      height: auto
+   .footer__com
+      flex-direction: column
+      align-items: flex-end
+   .footer__com p
+      margin-right: 0
+      margin-bottom: 10px
+   .panel__text, .panel__text2
+      max-width: 90%
+   .area__item p
+      br 
+        display: none 
+@media ( max-width: 991px )
+   input, textarea, select
+      -webkit-appearance: none
+      -moz-appearance: none
+      appearance: none
+   h1 
+      font-size: 36px
+      line-height: 49px
+      br 
+         display: block
+   h2
+      font-size: 28px
+      line-height: 36px
+   .item__row
+      overflow-x: auto
+   .item__el
+      margin-right: 70px
+   .call__box
+      margin-top: 150px
+   .call__bg 
+      top: -412px
+      left: 0
+      width: 100%
+   .footer__box
+      align-items: flex-end
+      margin-bottom: 30px
+      margin-top: 20px
+      ul
+         flex-direction: column
+         li 
+            margin-right: 0
+            margin-bottom: 25px
+            &:last-child
+               margin-bottom: 0
+   .header .swiper1 .swiper-slide img
+      object-position: -66px 0px
+@media screen and (max-width: 767px)
+   .popup
+      width: 95%
+      padding: 122px 20px 40px
+   .popup table
+      width: 682px
+   .popup .tabs__btn
+      height: 40px
+      padding: 0 20px
+      font-size: 11px
+      text-align: center
+   .header .swiper1 .swiper-slide img
+      object-position: -259px 0px
+   .about__video
+      width: 76px
+      margin-top: -38px
+      margin-left: -38px
+      height: 76px
+      .svg 
+         width: 100%
+         height: 100%
+   .area__box
+      margin-top: 30px
+   .area__item
+      width: 100%
+   .area__item h3
+      br 
+        display: none
+   .area__item:last-child
+      padding-top: 45px
+   .item__el
+      flex: 1 0 auto 
+      max-width: 244px
+      width: 244px
+      margin-right: -10px
+   .item__row
+      width: 100% 
+   .call__bg
+      top: -318px
+   .call__content
+      padding: 40px 23px 50px
+   .call__content .sub
+      text-align: center
+   .call__content h2
+      line-height: 36px 
+      text-align: center
+   .call__info
+      margin-bottom: 30px
+      text-align: center
+@media screen and (max-width: 576px)
+   button:active, button:focus 
+      outline: none
+   button::-moz-focus-inner 
+      border: 0
+   a:active, a:focus
+      outline: none
+   input, textarea
+      outline: none
+   input:active, textarea:active
+      outline: none
+   input:focusout
+      outline: none
+   .mob 
+      display: block !important
+   .nav
+      padding: 10px 0 5px
+   .nav__logo
+      width: 148px
+   .nav__box
+      padding-right: 50px
+   .menu-btn
+      top: 2px
+   .header__box p
+      line-height: 37px
+      margin-bottom: 20px
+   .header .swiper1 .swiper-slide
+      height: 827px
+   .header .container_2
+      margin-top: -87px
+   .header__go
+      width: 41px
+      height: 41px
+      right: 0
+      .svg 
+         width: 100%
+         height: 100%
+   .header .swiper1 .swiper-slide img 
+      object-position: -709px 0px
+   .header
+      padding-bottom: 84px
+   .area 
+      &__open
+         display: flex
+         margin: 0 auto
+         position: relative
+         &:before 
+            background: linear-gradient(180.00deg, rgba(0, 47, 79, 0),rgb(0, 47, 79) 100%)
+            content: ""
+            position: absolute
+            top: -355px
+            left: -167px
+            width: 500px
+            display: block
+            height: 340px
+      &__see 
+         display: none
+   .why__box
+      img 
+         height: 402px
+         object-fit: cover
+   .why .accordeon__button
+      font-size: 22px
+   .panel__text, .panel__text2
+      max-width: 100%
+   .works .swiper2
+      margin-top: 25px
+   .works .swiper2 .swiper-slide
+      height: 400px
+   .works .swiper-pagination2
+      margin-top: 21px
+   .works__arr
+      top: 51%
+   .call__txt
+      margin-top: 10px
+   .call__bg
+      top: -314px
+      width: 506px
+      left: 50% 
+      margin-left: -253px
+   .call__content h2
+      margin-bottom: 11px
+   .call__form button
+      width: 100%
+   .footer 
+      padding-top: 0
+   .footer__box
+      margin-top: 12px
+   .footer__box ul li
+      margin-bottom: 20px
+   .call .custom-checkbox + label p
+      br 
+         display: none
+   .area__item:last-child
+      padding-top: 25px  
